@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#161b22"/>
+  <!-- browser chrome bar -->
+  <rect x="0" y="0" width="800" height="36" fill="#21262d"/>
+  <circle cx="18" cy="18" r="7" fill="#f85149" opacity=".8"/>
+  <circle cx="36" cy="18" r="7" fill="#d29922" opacity=".8"/>
+  <circle cx="54" cy="18" r="7" fill="#3fb950" opacity=".8"/>
+  <rect x="80" y="8" width="640" height="20" rx="10" fill="#0d1117"/>
+  <!-- content placeholder -->
+  <rect x="0" y="36" width="800" height="464" fill="#d29922" opacity=".08"/>
+  <text x="400" y="230" font-family="system-ui,sans-serif" font-size="32" font-weight="bold" fill="#d29922" text-anchor="middle" opacity=".9">QuickBill Kenya</text>
+  <text x="400" y="274" font-family="system-ui,sans-serif" font-size="16" fill="#8b949e" text-anchor="middle">Project Screenshot</text>
+  <!-- fake content bars -->
+  <rect x="60" y="310" width="680" height="12" rx="6" fill="#30363d"/>
+  <rect x="60" y="334" width="340" height="12" rx="6" fill="#30363d"/>
+</svg>
