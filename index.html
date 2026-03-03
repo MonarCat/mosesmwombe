@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Moses Mwombe – Full-Stack Web Developer based in Kenya. Portfolio of completed, ongoing and upcoming web projects available for purchase or investment."
+    />
+    <meta property="og:title" content="Moses Mwombe | Web Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore Moses Mwombe's collection of web projects. Buy or invest in innovative Kenyan tech products."
+    />
+    <meta property="og:type" content="website" />
+    <title>Moses Mwombe | Web Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ══ HEADER ══════════════════════════════════════════════ -->
+    <header class="site-header">
+      <nav class="container nav-inner" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Moses<span>.</span>dev</a>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+        >
+          &#9776;
+        </button>
+        <ul class="nav-links" id="nav-menu" role="list">
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              href="mailto:iammwombe@gmail.com"
+              class="btn btn-primary"
+              style="padding: 0.45rem 1.1rem; font-size: 0.85rem"
+            >Hire Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ══ HERO ════════════════════════════════════════════════ -->
+      <section class="hero container" aria-labelledby="hero-heading">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Full-Stack Web Developer · Kenya</p>
+          <h1 class="hero-title" id="hero-heading">
+            Building Digital<br />Products That Work
+          </h1>
+          <p class="hero-subtitle">
+            I design and develop scalable web platforms for African markets.
+            Browse my project portfolio — complete projects are available to
+            buy, and ongoing ones are open for investment.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+          <div class="hero-stats" aria-label="Portfolio statistics">
+            <div class="stat">
+              <div class="stat-number">6</div>
+              <div class="stat-label">Completed</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">4</div>
+              <div class="stat-label">In Progress</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">2</div>
+              <div class="stat-label">Coming Soon</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portrait -->
+        <div class="hero-portrait" aria-label="Developer portrait">
+          <div class="portrait-frame">
+            <!-- Replace src with your real photo; alt is used for screen readers -->
+            <img
+              src="images/portrait.svg"
+              alt="Moses Mwombe – Full-Stack Web Developer"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="portrait-placeholder" style="display: none">
+              <span class="portrait-icon">👨‍💻</span>
+              <p>Photo coming soon</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- ══ PROJECTS ═══════════════════════════════════════════ -->
+      <section class="section" id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Portfolio</p>
+            <h2 class="section-title" id="projects-heading">My Web Projects</h2>
+            <p class="section-subtitle">
+              Click any project to view details, pricing, and options to buy or
+              invest.
+            </p>
+          </div>
+
+          <!-- Filter tabs -->
+          <div class="filter-bar" role="group" aria-label="Filter projects by status">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="completed">✅ Completed</button>
+            <button class="filter-btn" data-filter="ongoing">🔄 In Progress</button>
+            <button class="filter-btn" data-filter="upcoming">🚀 Coming Soon</button>
+          </div>
+
+          <!-- Cards injected by main.js -->
+          <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- ══ ABOUT ════════════════════════════════════════════════ -->
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">About Me</p>
+            <h2 class="section-title" id="about-heading">Who Is Moses Mwombe?</h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                I'm a self-driven Full-Stack Web Developer based in Kenya with a
+                passion for building practical, revenue-generating digital
+                products for the African market. I specialise in taking
+                ideas from concept to fully deployed, monetised platforms.
+              </p>
+              <p>
+                My focus is on clean architecture, mobile-first UX, M-Pesa
+                payment integrations, and scalable back-end systems. Every
+                project in this portfolio solves a real problem experienced by
+                Kenyan businesses and consumers.
+              </p>
+              <p>
+                I'm open to selling completed projects as turnkey solutions, and
+                partnering with investors on ongoing and upcoming ventures.
+              </p>
+              <div class="skills-list" aria-label="Technology skills">
+                <span class="skill-tag">PHP / Laravel</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Python / Django</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Vue.js</span>
+                <span class="skill-tag">React Native</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">M-Pesa API</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">Docker</span>
+              </div>
+            </div>
+            <div class="about-values" aria-label="Core values">
+              <div class="value-card">
+                <div class="value-icon">🏗️</div>
+                <h4>Clean Architecture</h4>
+                <p>Maintainable, well-documented code following industry standards.</p>
+              </div>
+              <div class="value-card">
+                <div class="value-icon">📱</div>
+                <h4>Mobile-First</h4>
+                <p>Every project is optimised for the phones Kenyans actually use.</p>
+              </div>
+              <div class="value-card">
+                <div class="value-icon">💳</div>
+                <h4>M-Pesa Ready</h4>
+                <p>Seamless payment integrations built into every commercial product.</p>
+              </div>
+              <div class="value-card">
+                <div class="value-icon">📈</div>
+                <h4>Growth-Focused</h4>
+                <p>Products designed to scale from day one, not just survive.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- ══ CONTACT ══════════════════════════════════════════════ -->
+      <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="container contact-inner">
+          <div class="contact-info">
+            <p class="section-eyebrow">Get In Touch</p>
+            <h2 id="contact-heading">Let's Talk Business</h2>
+            <p>
+              Interested in buying a completed project, investing in an ongoing
+              one, or just want to discuss a custom build? Drop me a line — I
+              respond within 24 hours.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:iammwombe@gmail.com" class="contact-link">
+                <span class="contact-icon" aria-hidden="true">✉️</span>
+                iammwombe@gmail.com
+              </a>
+              <a
+                href="https://github.com/MonarCat"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-link"
+              >
+                <span class="contact-icon" aria-hidden="true">🐙</span>
+                github.com/MonarCat
+              </a>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="mailto:iammwombe@gmail.com"
+            method="GET"
+            aria-labelledby="form-heading"
+          >
+            <h3 id="form-heading">Send a Message</h3>
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Jane Doe"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="jane@example.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea
+                id="contact-message"
+                name="body"
+                placeholder="I'm interested in buying / investing in…"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ══ FOOTER ══════════════════════════════════════════════ -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="footer-year"></span> Moses Mwombe. All rights
+          reserved. &nbsp;|&nbsp;
+          <a href="mailto:iammwombe@gmail.com">iammwombe@gmail.com</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/projects-data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

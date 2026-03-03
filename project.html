@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Project details – Moses Mwombe Portfolio" />
+    <title>Project | Moses Mwombe Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ══ HEADER ══════════════════════════════════════════════ -->
+    <header class="site-header">
+      <nav class="container nav-inner" aria-label="Main navigation">
+        <a href="index.html" class="nav-logo">Moses<span>.</span>dev</a>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+        >
+          &#9776;
+        </button>
+        <ul class="nav-links" id="nav-menu" role="list">
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li>
+            <a
+              href="mailto:iammwombe@gmail.com"
+              class="btn btn-primary"
+              style="padding: 0.45rem 1.1rem; font-size: 0.85rem"
+            >Hire Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ══ MAIN ════════════════════════════════════════════════ -->
+    <main id="project-main">
+      <div class="project-detail container">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <a href="index.html#projects" id="back-link">Projects</a>
+          <span class="breadcrumb-sep" aria-hidden="true">›</span>
+          <span id="project-title-crumb" aria-current="page">Project</span>
+        </nav>
+
+        <!-- ── Project Hero ──────────────────────────────── -->
+        <div class="project-hero">
+          <!-- Screenshot -->
+          <div class="project-hero-image">
+            <img
+              id="project-hero-img"
+              src="images/placeholder.svg"
+              alt="Project screenshot"
+            />
+          </div>
+
+          <!-- Meta & CTAs -->
+          <div class="project-hero-meta">
+            <span id="project-status-badge" class="status-badge">Loading…</span>
+            <h1 id="project-title">Loading…</h1>
+            <p class="project-tagline-text" id="project-tagline"></p>
+
+            <!-- Price -->
+            <div class="price-display" aria-label="Project price">
+              <span class="price-label">Price</span>
+              <span class="price-amount" id="project-price">—</span>
+            </div>
+
+            <!-- CTA buttons -->
+            <div class="project-cta-buttons">
+              <button id="btn-buy" class="btn btn-primary" type="button">
+                🛒 Buy This Project
+              </button>
+              <button id="btn-invest" class="btn btn-invest" type="button">
+                💼 Invest in This Project
+              </button>
+            </div>
+
+            <!-- Live URL -->
+            <p class="project-live-link">
+              🌐 Live site:
+              <a
+                id="project-live-btn"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Visit Project</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- ── Project Body ──────────────────────────────── -->
+        <div class="project-body">
+          <div class="project-main-col">
+            <!-- Description -->
+            <div class="project-section">
+              <h2>About This Project</h2>
+              <p id="project-description"></p>
+            </div>
+
+            <!-- Features -->
+            <div class="project-section">
+              <h2>Key Features</h2>
+              <ul class="features-list" id="project-features"></ul>
+            </div>
+
+            <!-- Tech Stack -->
+            <div class="project-section">
+              <h2>Tech Stack</h2>
+              <div class="tech-tags" id="project-tech"></div>
+            </div>
+          </div>
+
+          <!-- ── Sidebar ────────────────────────────────── -->
+          <aside class="project-sidebar" aria-label="Project details sidebar">
+            <!-- Quick info -->
+            <div class="sidebar-card">
+              <h3>Project Info</h3>
+              <div class="sidebar-detail">
+                <span class="detail-label">Status</span>
+                <span class="detail-value" id="sidebar-status">—</span>
+              </div>
+              <div class="sidebar-detail">
+                <span class="detail-label">Price</span>
+                <span class="detail-value" id="sidebar-price">—</span>
+              </div>
+            </div>
+
+            <!-- Contact CTA -->
+            <div class="sidebar-card">
+              <h3>Interested?</h3>
+              <p style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:1rem">
+                Reach out directly via email to discuss terms.
+              </p>
+              <a href="mailto:iammwombe@gmail.com" class="btn btn-outline" style="width:100%;justify-content:center">
+                ✉️ iammwombe@gmail.com
+              </a>
+            </div>
+
+            <!-- Back link -->
+            <a href="index.html#projects" class="btn btn-secondary" style="width:100%;justify-content:center">
+              ← Back to All Projects
+            </a>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- ══ FOOTER ══════════════════════════════════════════════ -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="footer-year"></span> Moses Mwombe. All rights
+          reserved. &nbsp;|&nbsp;
+          <a href="mailto:iammwombe@gmail.com">iammwombe@gmail.com</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/projects-data.js"></script>
+    <script src="js/project.js"></script>
+    <script>
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
+
+      // Sync breadcrumb title and sidebar values from project data
+      document.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(window.location.search);
+        const project = getProjectById(params.get("id"));
+        if (!project) return;
+
+        const crumb = document.getElementById("project-title-crumb");
+        if (crumb) crumb.textContent = project.title;
+
+        const sStatus = document.getElementById("sidebar-status");
+        const sPrice = document.getElementById("sidebar-price");
+        if (sStatus) sStatus.textContent = STATUS_LABELS[project.status];
+        if (sPrice) sPrice.textContent = formatPrice(project.price, project.currency);
+      });
+    </script>
+  </body>
+</html>
