@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
   initScrollHeader();
   highlightActiveNav();
+  initContactForm();
 });
 
 /* ── Render project cards ──────────────────────────────────── */
@@ -101,5 +102,32 @@ function highlightActiveNav() {
     if (link.getAttribute("href") === "index.html" || link.getAttribute("href") === "./") {
       link.classList.add("active");
     }
+  });
+}
+
+/* ── Contact form (mailto via JS to avoid browser security warning) ── */
+function initContactForm() {
+  const form = document.getElementById("contact-form");
+  if (!form) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const nameEl    = document.getElementById("contact-name");
+    const emailEl   = document.getElementById("contact-email");
+    const messageEl = document.getElementById("contact-message");
+    if (!nameEl || !emailEl || !messageEl) return;
+
+    const name    = nameEl.value.trim();
+    const email   = emailEl.value.trim();
+    const message = messageEl.value.trim();
+    if (!name || !email || !message) return;
+
+    const subject = encodeURIComponent("Portfolio enquiry from " + name);
+    const body    = encodeURIComponent(
+      "Name: " + name + "\nEmail: " + email + "\n\n" + message
+    );
+
+    window.location.href =
+      "mailto:iammwombe@gmail.com?subject=" + subject + "&body=" + body;
   });
 }
